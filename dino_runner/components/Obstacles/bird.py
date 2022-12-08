@@ -3,7 +3,7 @@ from dino_runner.utils.constants import BG_POS, BIRD
 import random
 class Bird (obstacle):
     def __init__(self, images):
-        self.type = random.randint(0, 2)
+        self.type = 0
         super().__init__(images, self.type)
         self.rect.y = BG_POS -100
         self.index = 0
