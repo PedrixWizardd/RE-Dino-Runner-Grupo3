@@ -75,7 +75,71 @@ BG = pygame.image.load(os.path.join(IMG_DIR, 'Other/Track.png'))
 
 HEART = pygame.image.load(os.path.join(IMG_DIR, 'Other/SmallHeart.png'))
 
-DEFAULT_TYPE = "default"
-
+DEFAULT_TYPE = "default" 
 SHIELD_TYPE = "shield"
 HAMMER_TYPE = "hammer"
+
+
+
+
+
+NDINO_DEAD = pygame.image.load(os.path.join(IMG_DIR, "NDino/DinoDead.png"))
+NDINO_START = pygame.image.load(os.path.join(IMG_DIR, "NDino/DinoStart.png"))
+
+NRUNNING = [
+    pygame.image.load(os.path.join(IMG_DIR, "NDino/DinoRun1.png")),
+    pygame.image.load(os.path.join(IMG_DIR, "NDino/DinoRun2.png")),
+]
+
+NRUNNING_SHIELD = [
+    pygame.image.load(os.path.join(IMG_DIR, "NDino/DinoRun1Shield.png")),
+    pygame.image.load(os.path.join(IMG_DIR, "NDino/DinoRun2Shield.png")),
+]
+
+NRUNNING_HAMMER = [
+    pygame.image.load(os.path.join(IMG_DIR, "NDino/DinoRun1Hammer.png")),
+    pygame.image.load(os.path.join(IMG_DIR, "NDino/DinoRun2Hammer1.png")),
+]
+
+NJUMPING = pygame.image.load(os.path.join(IMG_DIR, "NDino/DinoJump.png"))
+NJUMPING_SHIELD = pygame.image.load(os.path.join(IMG_DIR, "NDino/DinoJumpShield.png"))
+NJUMPING_HAMMER = pygame.image.load(os.path.join(IMG_DIR, "NDino/DinoJumpHammer.png"))
+
+NDUCKING = [
+    pygame.image.load(os.path.join(IMG_DIR, "NDino/DinoDuck1.png")),
+    pygame.image.load(os.path.join(IMG_DIR, "NDino/DinoDuck2.png")),
+]
+
+NDUCKING_SHIELD = [
+    pygame.image.load(os.path.join(IMG_DIR, "NDino/DinoDuck1Shield.png")),
+    pygame.image.load(os.path.join(IMG_DIR, "NDino/DinoDuck2Shield.png")),
+]
+
+NDUCKING_HAMMER = [
+    pygame.image.load(os.path.join(IMG_DIR, "NDino/DinoDuck1Hammer.png")),
+    pygame.image.load(os.path.join(IMG_DIR, "NDino/DinoDuck2Hammer.png")),
+]
+
+NSMALL_CACTUS = [
+    pygame.image.load(os.path.join(IMG_DIR, "NCactus/SmallCactus1.png")),
+    pygame.image.load(os.path.join(IMG_DIR, "NCactus/SmallCactus2.png")),
+    pygame.image.load(os.path.join(IMG_DIR, "NCactus/SmallCactus3.png")),
+]
+NLARGE_CACTUS = [
+    pygame.image.load(os.path.join(IMG_DIR, "NCactus/LargeCactus1.png")),
+    pygame.image.load(os.path.join(IMG_DIR, "NCactus/LargeCactus2.png")),
+    pygame.image.load(os.path.join(IMG_DIR, "NCactus/LargeCactus3.png")),
+]
+
+NBIRD = [
+    pygame.image.load(os.path.join(IMG_DIR, "NBird/Bird1.png")),
+    pygame.image.load(os.path.join(IMG_DIR, "NBird/Bird2.png")),
+]
+
+# NCLOUD = pygame.image.load(os.path.join(IMG_DIR, 'NOther/Cloud.png'))
+# NSHIELD = pygame.image.load(os.path.join(IMG_DIR, 'NOther/shield.png'))
+# NHAMMER = pygame.image.load(os.path.join(IMG_DIR, 'NOther/hammer.png'))
+
+NBG = pygame.image.load(os.path.join(IMG_DIR, 'NOther/Track.png'))
+
+NHEART = pygame.image.load(os.path.join(IMG_DIR, 'NOther/SmallHeart.png'))
