@@ -3,6 +3,7 @@ from random import randint
 import pygame
 from dino_runner.components.Obstacles.shield import Shield
 from dino_runner.components.Obstacles.hammer import Hammer
+from dino_runner.components.dinosaur import Dinosaur
 import random
 
 class PowerUpManager ():
@@ -17,7 +18,7 @@ class PowerUpManager ():
             if self.choose == 0:
                 self.power_ups.append(Shield())
             if self.choose == 1:
-                 self.power_ups.append(Hammer())
+                 self.power_ups.append(Shield())
 
     def update (self, game_speed, player):
         self.power_up_clok += 1
@@ -28,6 +29,7 @@ class PowerUpManager ():
             power_up.update(game_speed, self.power_ups)
             if player.dino_rect.colliderect(power_up.rect):
                 power_up.start_time = pygame.time.get_ticks()
+                Dinosaur.reactivate_power_up()
                 player.on_pick_power_up(power_up.start_time, power_up.duration, power_up.type)
                 self.power_ups.remove(power_up)
 
