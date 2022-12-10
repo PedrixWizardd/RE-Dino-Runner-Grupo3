@@ -16,7 +16,7 @@ class PowerUpManager ():
         if len (self.power_ups) == 0 and self.when_appears == self.power_up_clok:
             self.choose = random.randint(0, 1)
             if self.choose == 0:
-                self.power_ups.append(Shield())
+                self.power_ups.append(Hammer())
             if self.choose == 1:
                  self.power_ups.append(Shield())
 
